@@ -1,0 +1,28 @@
+@media (max-width: 800px) {
+    .contactsection1con{
+        /* padding: 40px;
+        background-color: #0f1937;
+        color: white; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactEachInput{
+        width: 100%;
+    }
+
+
+    .contactsection2con{
+        padding: 20px;
+    }
+
+    .constactsec1container{
+        padding: 20px;
+    }
+
+    .contactformcon{
+        width: 100%;
+    }
+}

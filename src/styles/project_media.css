@@ -1,0 +1,27 @@
+@media (max-width: 800px) {
+    .project_container{
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    .each_project_container{
+        width: calc(100%);
+        flex-direction: column-reverse;
+        min-height: 200px;
+    }
+
+    .eachprojimgcon{
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .eachprojimgcon3{
+        /* min-height: 300px; */
+    }
+
+    .eachprojtextcon{
+        width: calc(100% - 20px);
+        padding: 20px 10px;
+    }
+}

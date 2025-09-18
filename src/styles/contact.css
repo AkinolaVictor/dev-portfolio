@@ -1,0 +1,55 @@
+
+
+.contactsection1con{
+    /* padding: 40px;
+    background-color: #0f1937;
+    color: white; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contactsection2con{
+    width: 100%;
+    height: auto;
+    /* background-color: #665600; */
+    background-color: black;
+    padding: 40px;
+    color: white;
+    display: flex;
+}
+
+.constactsec1container{
+    background-color: #0f1937;
+    padding: 40px;
+    color: white;
+}
+
+.contactEachInput{
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    width: 600px;
+    /* padding: 15px 0px; */
+    height: 40px;
+    /* background-color: #665600; */
+    background-color: black;
+    margin-bottom: 40px;
+}
+
+.contactsubmitbtn{
+    width: 150px;
+    height: 40px;
+    /* font-weight: 600; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    background-color: transparent;
+    /* color: black; */
+    color: white;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
