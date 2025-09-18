@@ -16,7 +16,7 @@ function HomeSection2() {
                     <span>Softwaer Solutions</span> */}
                 </p>
                 
-                <p className='home1text2_1' style={{marginBottom: "30px"}}>
+                <p className='home1text2_1' style={{marginBottom: "30px", fontSize: "15px", color: "rgba(0,0,0,0.9)"}}>
                     With a degree in computer science and a knack for problem solving,
                     i specialize in web and mobile application development. My interests 
                     include exploring new technologies, contributing to open-source 

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 function HomeSection1() {
@@ -14,13 +15,16 @@ function HomeSection1() {
                     <span>Challenges</span> */}
                 </p>
                 
-                <p className='home1text2' style={{ }}>
+                <p className='home1text2' style={{ color: "gray",  fontSize: "15px"}}>
                     As a passionate fullstack developer, is pecialize in creating dynamic
                     web applications that elevate user experience. Let's collaborate to
                     bring your idea to life with cutting-edge technology.
                 </p>
                 <div className='home1button1' style={{}}>
-                    Contact Me
+                
+                    <Link href={"/contact"} style={{textDecoration: "none"}}>
+                        Contact Me
+                    </Link>
                 </div>
             </div>
 

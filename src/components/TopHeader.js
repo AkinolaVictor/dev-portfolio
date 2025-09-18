@@ -7,10 +7,17 @@ function TopHeader({toggleModal, backgroundColor, route}) {
     // console.log({window});
     
     return (
-        <div className='home-headerx' style={{backgroundColor}}>
+        <div className='home-headerx' style={{backgroundColor: "black"}}>
 
             <div className='headerLogo'>
                 
+                <Link href={"/"} style={{textDecoration: "none", color: "white", fontSize: "20px"}}>
+                    <img 
+                        src="logo.jpg" 
+                        alt="emoji logo" 
+                        className='headerLogo'
+                    />
+                </Link>
             </div>
             <div className='headerLinkOptions'>
                 {
@@ -31,7 +38,8 @@ function TopHeader({toggleModal, backgroundColor, route}) {
                         width={"32"}
                         height={"32"}
                         alt='menu-icon'
-                        src={"/icons/menu_icon.png"}
+                        // src={"/icons/menu_icon.png"}
+                        src={"/icons/menu2.svg"}
                     />
                 </div>
             </div>

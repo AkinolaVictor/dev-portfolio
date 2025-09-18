@@ -51,7 +51,7 @@ function MenuModal({toggle}) {
                                     transition={{duration: 1, delay: index*0.1}}
                                     key={index} style={{margin: `30px 0px 30px 0px`, textAlign: "center"}}
                                 >
-                                    <Link href={item.href} style={{textDecoration: "none", color: "white", fontSize: "20px",}} onClick={openLink}>
+                                    <Link href={item.href} style={{textDecoration: "none", color: "white", fontSize: "20px"}} onClick={openLink}>
                                         {item.title}
                                     </Link>
                                     <div style={{width: "100%", height: path===item.href?"3px":"0px", backgroundColor: "white"}}/>

@@ -14,6 +14,7 @@ function HomeSection8() {
                             [1,1,1,1,1].map((item, index)=>{
                                 return(
                                     <img 
+                                        key={index}
                                         src="/icons/star_white.svg" 
                                         alt="code icon" 
                                         style={{width: "20px", height: "20px", }}

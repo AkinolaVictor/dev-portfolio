@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function HomeSection3() {
@@ -10,7 +11,7 @@ function HomeSection3() {
                 {/* <p style={{fontWeight: "600", fontSize: "50px", textAlign: "center"}}>Crafting Innovative</p>
                 <p style={{fontWeight: "600", fontSize: "50px", textAlign: "center"}}>Software Solutions For</p>
                 <p style={{fontWeight: "600", fontSize: "50px", textAlign: "center"}}>You</p> */}
-                <p style={{margin: "30px 0px 20px 0px", textAlign: "center"}}>
+                <p style={{margin: "30px 0px 20px 0px", textAlign: "center", color: "rgba(255,255,255, 0.8)", fontSize: "15px"}}>
                     Welcome to my portfolio, where creativity meets technology. 
                     Explore my projects and discover how i can help bring your ideas to live
                 </p>
@@ -18,10 +19,14 @@ function HomeSection3() {
             
             <div style={{display: "flex", justifyContent: "center", alignItems: "center", margin: "10px 0px"}}>
                 <div style={{color: "black", cursor: "pointer", fontSize: "calc(100% - 2px)", margin: "0px 10px", padding: "10px 20px", borderRadius: "30px", backgroundColor: "white"}}>
-                    Projects
+                    <Link href={"/projects"} style={{textDecoration: "none"}}>
+                        Projects
+                    </Link>
                 </div>
                 <div style={{color: "white", cursor: "pointer", fontSize: "calc(100% - 2px)", margin: "0px 10px", padding: "10px 20px", borderRadius: "30px", border: "1px solid white"}}>
-                    Contact
+                    <Link href={"/contact"} style={{textDecoration: "none"}}>
+                        Contact
+                    </Link>
                 </div>
             </div>
 

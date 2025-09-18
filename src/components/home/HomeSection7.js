@@ -20,7 +20,7 @@ function HomeSection7() {
                         Collaborative projects that drive innovation and success for your business.
                     </p>
 
-                    <p>My services are designed to meet your unique development needs</p>
+                    <p style={{color: "gray", fontSize: "15px"}}>My services are designed to meet your unique development needs</p>
                 </div>
 
                 <div className='eachhome6content' style={{}}>
@@ -37,7 +37,7 @@ function HomeSection7() {
                         Consulting services that empower you to make informed technology decisions.
                     </p>
 
-                    <p>
+                    <p style={{color: "gray", fontSize: "15px"}}>
                         Leverage my expertise to navigate the complexities of software development.
                     </p>
                 </div>
@@ -55,7 +55,7 @@ function HomeSection7() {
                         Freelance development tailored to your project requirements and deadlines.
                     </p>
 
-                    <p>
+                    <p style={{color: "gray", fontSize: "15px"}}>
                         I provide flexible solutions that adapt to your evelving needs.
                     </p>
                 </div>

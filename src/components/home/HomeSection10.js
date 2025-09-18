@@ -26,7 +26,7 @@ function HomeSection10() {
                     </div>
 
                     <p style={{fontWeight: "600", fontSize: "25px", marginTop: "30px", }}>Step 1: Understanding Your Requirements</p>
-                    <p style={{marginTop: "30px"}}>I start by clarifying your ideas and objectives</p>
+                    <p style={{marginTop: "30px", color: "rgba(255,255,255,0.8)", fontSize: "15px"}}>I start by clarifying your ideas and objectives</p>
                 </div>
                 
                 <div className='home10eachcontent' style={{}}>
@@ -39,7 +39,7 @@ function HomeSection10() {
                     </div>
 
                     <p style={{fontWeight: "600", fontSize: "25px", marginTop: "30px", }}>Step 2: Design and Prototyping</p>
-                    <p style={{marginTop: "30px"}}>I create wireframes and prototypes for your review</p>
+                    <p style={{marginTop: "30px", color: "rgba(255,255,255,0.8)", fontSize: "15px"}}>I create wireframes and prototypes for your review</p>
                 </div>
                 
                 <div className='home10eachcontent' style={{borderBottom: "none"}}>
@@ -52,7 +52,7 @@ function HomeSection10() {
                     </div>
 
                     <p style={{fontWeight: "600", fontSize: "25px", marginTop: "30px", }}>Step 3: Development and Testing</p>
-                    <p style={{marginTop: "30px"}}>I build your project while rigorously testing for quality</p>
+                    <p style={{marginTop: "30px", color: "rgba(255,255,255,0.8)", fontSize: "15px"}}>I build your project while rigorously testing for quality</p>
                 </div>
                 
             </div>

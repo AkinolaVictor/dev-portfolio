@@ -17,11 +17,11 @@ function HomeSection6() {
                         />
                     </div>
 
-                    <p style={{fontWeight: 500, fontSize: "25px", marginBottom: "30px"}}>
+                    <p style={{fontWeight: 500, fontSize: "20px", marginBottom: "30px"}}>
                         Expertise in Modern Web Development and Programming Languages
                     </p>
 
-                    <p>Proficient in HTML, CSS, and, Javascript for dynamic web applications.</p>
+                    <p style={{color: "rgba(255,255,255,0.8)", fontSize: "15px"}}>Proficient in HTML, CSS, and, Javascript for dynamic web applications.</p>
                 </div>
                 <div className='eachhome6content' style={{ }}>
                     <div style={{width: "40px", height: "40px", borderRadius: "20px", marginBottom: "30px"}}>
@@ -32,11 +32,11 @@ function HomeSection6() {
                         />
                     </div>
 
-                    <p style={{fontWeight: 500, fontSize: "25px", marginBottom: "30px"}}>
+                    <p style={{fontWeight: 500, fontSize: "20px", marginBottom: "30px"}}>
                         Frameworks That Enhance My Development Efficiency and Creativity
                     </p>
 
-                    <p>Skilled in React and Next for building responsive user interface.</p>
+                    <p style={{color: "rgba(255,255,255,0.8)", fontSize: "15px"}}>Skilled in React and Next for building responsive user interface.</p>
                 </div>
                 <div className='eachhome6content' style={{ borderBottom: "none" }}>
                     <div style={{width: "40px", height: "40px", borderRadius: "20px", marginBottom: "30px"}}>
@@ -47,11 +47,11 @@ function HomeSection6() {
                         />
                     </div>
 
-                    <p style={{fontWeight: 500, fontSize: "25px", marginBottom: "30px"}}>
+                    <p style={{fontWeight: 500, fontSize: "20px", marginBottom: "30px"}}>
                         Database Management Skills for Robust Data Handling and Storage
                     </p>
 
-                    <p>Experienced with MongoDB and Firebase for effective data management</p>
+                    <p style={{color: "rgba(255,255,255,0.8)", fontSize: "15px"}}>Experienced with MongoDB and Firebase for effective data management</p>
                 </div>
             </div>
         </div>

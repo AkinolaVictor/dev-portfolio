@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function HomeSection9() {
@@ -9,13 +10,15 @@ function HomeSection9() {
                     Why Choose Me as Your Developer
                 </p>
                 
-                <p className='home1text2' style={{ }}>
+                <p className='home1text2' style={{ color: "rgba(255,255,255,0.8)", fontSize: "15px" }}>
                     With a commitment to reliability, I ensure your projects are delivered on time and to the highest standards. 
                     My innovative approach and expertise guarantee solutions that not only meet but exceed your expectations.
                 </p>
 
-                <div className='home1button1' style={{}}>
-                    Contact Me
+                <div className='home1button1' style={{cursor: "pointer"}}>
+                    <Link href={"/contact"} style={{textDecoration: "none"}}>
+                        Contact Me
+                    </Link>
                 </div>
             </div>
 

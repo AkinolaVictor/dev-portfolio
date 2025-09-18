@@ -9,7 +9,7 @@ function HomeSection5() {
                     Meet your next software development partner
                 </p>
                 
-                <p className='home1text2'  style={{ }}>
+                <p className='home1text2'  style={{ color: "rgba(255, 255, 255, 0.8)", fontSize: "15px"}}>
                     I specialize in creating efficient and scalable software solution. My passion for 
                     technology drives me to stay updated with the latest industry trends and best practices.
                 </p>

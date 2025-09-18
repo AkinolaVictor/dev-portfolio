@@ -28,7 +28,8 @@ export default function App({ Component, pageProps, router }) {
 
   // console.log(router.route);
   
-  const backgroundColor = router.route==="/contact"?"#665600":"black"
+  // const backgroundColor = router.route==="/contact"?"#665600":"black"
+  const backgroundColor = "black"
 
   function onScroll(e){
     // if on small screen

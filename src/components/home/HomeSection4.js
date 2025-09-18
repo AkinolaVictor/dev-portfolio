@@ -1,5 +1,6 @@
 import React from 'react'
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 // import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 
 export default function HomeSection4() {
@@ -25,7 +26,7 @@ export default function HomeSection4() {
             <div style={{textAlign: "center", color: "white", marginTop: "70px"}}>
                 <p style={{fontWeight: 600, margin: "20px 0px"}}>Innovate</p>
                 <p className='home4txt1' style={{fontWeight: 500, margin: "20px 0px"}}>Core Competencies Overview</p>
-                <p style={{margin: "20px 0px"}}>Expertise in modern Software development technologies</p>
+                <p style={{margin: "20px 0px", color: "rgba(255, 255, 255, 0.8", fontSize: "15px"}}>Expertise in modern Software development technologies</p>
             </div>
             <div style={{color: "white"}}>
                 <ResponsiveMasonry
@@ -55,16 +56,18 @@ function Content1() {
     return (
         <div className='home4content1' style={{ }}>
             <div style={{color: "white", padding: "30px"}}>
-                <p style={{fontWeight: 600}}>Skills</p>
+                <p style={{fontWeight: 600, color: "gray"}}>Skills</p>
                 <p style={{fontWeight: 600, fontSize: "23px", marginTop: "20px"}}>Programming Languages and Frameworks</p>
-                <p style={{fontSize: "15px", marginTop: "20px"}}>
+                <p style={{fontSize: "15px", marginTop: "20px", color: "gray"}}>
                     Proficient in Javascript, Python, React, Next.js, and Node.js
                     for robust software application development.
                 </p>
 
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center", margin: "30px 0px 10px 0px"}}>
                     <div style={{color: "black", fontSize: "calc(100% - 2px)", cursor: "pointer", margin: "0px 10px", padding: "10px 20px", borderRadius: "30px", backgroundColor: "white"}}>
-                        Explore
+                        <Link href={"/projects"} style={{textDecoration: "none"}}>
+                            Explore
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -93,14 +96,16 @@ function Content2(){
                     style={{width: "100%", height: "100%", }}
                 />
             </div>
-            <div className='home4textcon'>
-                <p style={{fontWeight: "600"}}>Technologies</p>
-                <p style={{fontWeight: "600", fontSize: "23px", margin: "20px 0"}}>Version Control and collaboration</p>
-                <p style={{}}>Familiar with git, github and Agile methodologies</p>
+            <div className='home4textcon' style={{padding: "50px 20px"}}>
+                <p style={{fontWeight: "600", color: "gray", fontSize: "14px"}}>Technologies</p>
+                <p style={{fontWeight: "600", fontSize: "20px", margin: "20px 0"}}>Version Control and collaboration</p>
+                <p style={{color: "gray", fontSize: "15px"}}>Familiar with git, github and Agile methodologies</p>
 
-                <div style={{cursor: "pointer", fontSize: "calc(100% - 2px)", marginTop: "20px", padding: "0px"}}>
-                    Explore
-                </div>
+                {/* <div style={{cursor: "pointer", fontSize: "calc(100% - 2px)", marginTop: "20px", padding: "0px"}}>
+                    <Link href={"/projects"} style={{textDecoration: "none"}}>
+                        Explore
+                    </Link>
+                </div> */}
             </div>
         </div>
     )
@@ -120,10 +125,10 @@ function Content3(){
                     style={{width: "100%", height: "100%", }}
                 />
             </div>
-            <div className='home4textcon' style={{}}>
-                <p style={{fontWeight: "600"}}>Technologies</p>
-                <p style={{fontWeight: "600", fontSize: "23px", margin: "20px 0"}}>Database Management Systems</p>
-                <p style={{}}>Experienced with MongoDB and Firebase</p>
+            <div className='home4textcon' style={{padding: "40px 20px"}}>
+                <p style={{fontWeight: "600", color: "gray", fontSize: "13px"}}>Technologies</p>
+                <p style={{fontWeight: "600", fontSize: "20px", margin: "20px 0"}}>Database Management Systems</p>
+                <p style={{color: "gray", fontSize: "15px"}}>Experienced with MongoDB and Firebase</p>
 
                 {/* <div style={{cursor: "pointer", marginTop: "20px", padding: "0px"}}>
                     Explore
@@ -147,12 +152,12 @@ function Content4(){
                     style={{width: "100%", height: "100%", }}
                 />
             </div>
-            <div className='home4textcon'>
-                <p style={{fontWeight: "600"}}>Technologies</p>
-                <p style={{fontWeight: "600", fontSize: "23px", margin: "20px 0"}}>
+            <div className='home4textcon' style={{padding: "60px 20px"}}>
+                <p style={{fontWeight: "600", fontSize: "13px", color:"gray"}}>Technologies</p>
+                <p style={{fontWeight: "600", fontSize: "20px", margin: "20px 0"}}>
                     Cloud Service and Deployment
                 </p>
-                <p style={{}}>Skilled in AWS, Azure, and Docker Technologies</p>
+                <p style={{fontSize: "15px", color: "gray"}}>Skilled in AWS, Azure, and Docker Technologies</p>
 
                 {/* <div style={{cursor: "pointer", marginTop: "20px", padding: "0px"}}>
                     Explore
@@ -166,15 +171,17 @@ function Content5() {
     return (
         <div className='home4content1' style={{ }}>
             <div style={{color: "white", padding: "30px"}}>
-                <p style={{fontWeight: 600}}>Frameworks</p>
+                <p style={{fontWeight: 600, color: "gray"}}>Frameworks</p>
                 <p style={{fontWeight: 600, fontSize: "23px", marginTop: "20px"}}>User Interface Design Skills</p>
-                <p style={{fontSize: "15px", marginTop: "20px"}}>
+                <p style={{fontSize: "15px", marginTop: "20px", color: "gray"}}>
                     Passionate about creating intuitive and engaging user experience through design principles.
                 </p>
 
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center", margin: "30px 0px 10px 0px"}}>
                     <div style={{color: "black", cursor: "pointer", fontSize: "calc(100% - 2px)", margin: "0px 10px", padding: "10px 20px", borderRadius: "30px", backgroundColor: "white"}}>
-                        Explore
+                        <Link href={"/projects"} style={{textDecoration: "none"}}>
+                            Explore
+                        </Link>
                     </div>
                 </div>
             </div>
