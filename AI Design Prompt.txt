@@ -1,0 +1,40 @@
+Summary
+A professional developer portfolio website designed to showcase skills, projects, and experience. The site aims to provide a clear and engaging presentation of the developer's work to potential employers or collaborators.
+
+Layout structure
+- Global Navigation: Persistent header with links to Home, About, Projects, Experience, Contact.
+- Home Page: Hero section with name, title, and a brief introduction. Call-to-action for viewing projects or resume.
+- About Page: Detailed personal bio, skills section (e.g., programming languages, tools).
+- Projects Page: Grid or list of project cards, each with title, brief description, and link to details/live demo/repo.
+- Experience Page: Chronological list of work history, including company, role, dates, and responsibilities/achievements.
+- Contact Page: Form for inquiries (name, email, message) and links to social media/professional profiles.
+
+Visual style
+- Clean, modern aesthetic with a professional color palette.
+- Emphasis on readability with clear typography.
+- Consistent spacing and alignment across all pages.
+- Subtle animations for transitions or hover effects.
+
+Interactions
+- Smooth navigation between pages via header links.
+- Project cards should be clickable to reveal more details or external links.
+- Contact form submission with basic validation and confirmation.
+
+
+
+
+
+
+FIGMA TEMPLATES links
+https://figmafreebie.com
+https://www.freefigmatemplates.com
+
+
+UI/UX Generation
+https://app.banani.co
+
+
+
+Portfolio link
+https://dev-portfolio-hvzj.onrender.com/
+

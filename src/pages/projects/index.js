@@ -20,7 +20,7 @@ function Index() {
                                 Portfolio
                             </p>
                             
-                            <p style={{opacity: .7, fontSize: "calc(100% - 1px)"}}>
+                            <p style={{opacity: .7, fontSize: "15px"}}>
                                 I created this personal project in order to showcase
                                 some of the stuffs i can do. This is my portfolio website.
                             </p>
@@ -48,7 +48,7 @@ function Index() {
                                 Brynt
                             </p>
                             
-                            <p style={{opacity: .7, fontSize: "calc(100% - 1px)"}}>
+                            <p style={{opacity: .7, fontSize: "15px"}}>
                                 I created this personal project in order to showcase
                                 some of the stuffs i can do. This is a SaaS project.
                             </p>

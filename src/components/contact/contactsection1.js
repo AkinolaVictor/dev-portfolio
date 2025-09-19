@@ -16,7 +16,7 @@ function Contactsection1() {
                         />
                     </div>
                     <p style={{fontWeight: 600, marginBottom: "10px"}}>Email</p>
-                    <p style={{fontWeight: 300, fontSize: "calc(100% - 2px)"}}>akinolavictor50@gmail.com</p>
+                    <p style={{fontWeight: 300, fontSize: "15px", color: "rgba(255,255,255,0.6)"}}>akinolavictor50@gmail.com</p>
                 </div>
 
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", margin: "20px"}}>
@@ -28,7 +28,7 @@ function Contactsection1() {
                         />
                     </div>
                     <p style={{fontWeight: 600, marginBottom: "10px"}}>Github</p>
-                    <p style={{fontWeight: 300, fontSize: "calc(100% - 2px)"}}>akinolavictor50@gmail.com</p>
+                    <p style={{fontWeight: 300, fontSize: "15px", color: "rgba(255,255,255,0.6)"}}>akinolavictor50@gmail.com</p>
                 </div>
 
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", margin: "20px"}}>
@@ -40,7 +40,7 @@ function Contactsection1() {
                         />
                     </div>
                     <p style={{fontWeight: 600, marginBottom: "10px"}}>LinkedIn</p>
-                    <p style={{fontWeight: 300, fontSize: "calc(100% - 2px)"}}>akinolavictor50@gmail.com</p>
+                    <p style={{fontWeight: 300, fontSize: "15px", color: "rgba(255,255,255,0.6)"}}>akinolavictor50@gmail.com</p>
                 </div>
             </div>
         </div>

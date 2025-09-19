@@ -19,8 +19,8 @@ function ContactSection2() {
             <div className='contactformcon' style={{marginLeft: "auto", marginRight: "auto",}}>
                 <p style={{fontWeight: 600, marginBottom: "20px"}}>Connect</p>
                 <p style={{fontWeight: 600, fontSize: "25px", marginBottom: "20px"}}>Get in Touch</p>
-                <p style={{marginBottom: "50px", fontWeight: 300}}>I'd Love to hear from you</p>
-                <p style={{fontWeight: 300}}>Name</p>
+                <p style={{marginBottom: "50px", fontWeight: 600, fontSize: "15px", color: "gray"}}>I'd Love to hear from you</p>
+                <p style={{fontWeight: 400, fontSize: "15px", color: "rgba(255, 255, 255, 0.8)"}}>Name</p>
                 <input 
                     type="text" 
                     name="clientname" 
@@ -30,7 +30,7 @@ function ContactSection2() {
                     onChange={(e)=>{update("name", e.target.value)}}
                     placeholder='Enter Your Name'
                 />
-                <p style={{fontWeight: 300}}>Email</p>
+                <p style={{fontWeight: 400, fontSize: "15px", color: "rgba(255, 255, 255, 0.8)"}}>Email</p>
                 <input 
                     type="text" 
                     name="clientemail" 
@@ -40,7 +40,7 @@ function ContactSection2() {
                     placeholder='Enter Your Email'
                     onChange={(e)=>{update("email", e.target.value)}}
                 />
-                <p style={{fontWeight: 300, marginBottom: "15px"}}>Message</p>
+                <p style={{fontWeight: 400, fontSize: "15px", color: "rgba(255, 255, 255, 0.8)", marginBottom: "15px"}}>Message</p>
                 <textarea
                     type="text" 
                     name="clientname" 

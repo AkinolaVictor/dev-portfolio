@@ -1,13 +1,13 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-function HomeSection1() {
+function AboutMe() {
     return (
         <div className='homesection1' style={{}}>
             <div className='homesection1Texts'>
+                <p style={{color: "gray", fontWeight: 600, fontSize: "15px", marginBottom: "20px"}}>Fullstack Developer</p>
                 <p className='home1text1' style={{}}>
-                    Crafting innovative solutions for tomorrow's challenges
+                    Crafting digital experiences that are fast, accessible, and, reliable.
                     {/* <span>Crafting</span>
                     <span>Innovative</span>
                     <span>Solution For</span>
@@ -16,9 +16,7 @@ function HomeSection1() {
                 </p>
                 
                 <p className='home1text2' style={{ color: "gray",  fontSize: "15px"}}>
-                    As a passionate fullstack developer, is pecialize in creating dynamic
-                    web applications that elevate user experience. Let's collaborate to
-                    bring your idea to life with cutting-edge technology.
+                    I design and build end-to-end applications---turning complex ideas into delightful products.
                 </p>
                 <div className='home1button1' style={{}}>
                 
@@ -39,4 +37,4 @@ function HomeSection1() {
     )
 }
 
-export default HomeSection1
+export default AboutMe

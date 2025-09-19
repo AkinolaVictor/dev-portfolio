@@ -46,6 +46,7 @@ function HomeSection8() {
                                     <img 
                                         src="/icons/star_white.svg" 
                                         alt="code icon" 
+                                        key={index}
                                         style={{width: "20px", height: "20px", }}
                                     />
                                 )
@@ -75,6 +76,7 @@ function HomeSection8() {
                                     <img 
                                         src="/icons/star_white.svg" 
                                         alt="code icon" 
+                                        key={index}
                                         style={{width: "20px", height: "20px", }}
                                     />
                                 )

@@ -9,8 +9,11 @@ import "@/styles/contact.css";
 import "@/styles/contact_media.css";
 import "@/styles/project.css";
 import "@/styles/project_media.css";
+import "@/styles/about.css";
+import "@/styles/about_media.css";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import Lenis from "@studio-freight/lenis";
 
 export default function App({ Component, pageProps, router }) {
   // console.log({router, pp: router.route});
@@ -67,13 +70,25 @@ export default function App({ Component, pageProps, router }) {
     }
   }
 
-  function scroller(e){
-  }
   useEffect(()=>{
-    // container.current.scrollTop(0)
     container.current.scrollTo(0, 0)
     // window.scrollTo(0, 0)
   }, [router.route])
+
+  // useEffect(()=>{
+  //   const lenis = new Lenis()
+
+  //   function raf(time){
+  //     console.log({time});
+      
+  //     lenis.raf(time)
+  //     requestAnimationFrame(raf)
+  //   }
+
+  //   requestAnimationFrame(raf)
+  // }, [])
+
+
 
   return (
     <div 

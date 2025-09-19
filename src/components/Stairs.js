@@ -55,6 +55,18 @@ function Stairs({children}) {
         }
     }
 
+    function colorSelector(i){
+        const pallete = {
+            0: "#ddd",
+            1: "#414141",
+            2: "#ddd",
+            3: "#414141",
+            4: "#ddd",
+            5: "#414141"
+        }
+        return pallete[i]
+    }
+
 
     return (
         <div onScroll={()=>{console.log("s");}}>
@@ -62,7 +74,7 @@ function Stairs({children}) {
             <motion.div style={{height: "100vh", width: "100vw", position: "fixed", top: 0, left: 0, pointerEvents: "none", display: "flex"}}>
                 <motion.div 
                     {...anim(overlay)}
-                    style={{height: "100vh", width: "100%", position: "fixed", top: 0, left: 0, pointerEvents: "none", backgroundColor: "black"}} 
+                    style={{height: "100vh", width: "100%", position: "fixed", zIndex: 9000000000000, top: 0, left: 0, pointerEvents: "none", backgroundColor: "black"}} 
                 />
                 {
                     // Array(count).map((item, index)=>{
@@ -73,7 +85,7 @@ function Stairs({children}) {
                                 // {...anim(expand, index)}
                                 {...anim(expand, 6-index)}
                                 key={index}
-                                style={{width: "100%", height: "100%", backgroundColor: "black", position: "relative "}}
+                                style={{width: "100%", height: "100%", backgroundColor: `#414141`, position: "relative "}}
                             />
                         )
                     })
