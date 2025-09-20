@@ -73,9 +73,9 @@ export default function App({ Component, pageProps, router }) {
   useEffect(()=>{
 
     container.current.scrollTo(0, 1000)
-    setTimeout(() => {
-      container.current.scrollTo(0, 0)
-    }, 1200);
+    // setTimeout(() => {
+    //   container.current.scrollTo(0, 0)
+    // }, 1200);
     // window.scrollTo(0, 0)
   }, [router.route])
 
