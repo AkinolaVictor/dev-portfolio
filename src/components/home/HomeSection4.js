@@ -1,6 +1,7 @@
 import React from 'react'
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import {motion} from "framer-motion"
 // import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 
 export default function HomeSection4() {
@@ -54,7 +55,13 @@ export default function HomeSection4() {
 
 function Content1() {
     return (
-        <div className='home4content1' style={{ }}>
+        <motion.div 
+            className='home4content1' 
+            style={{ }}
+            initial={{opacity: 0, x: -200}}
+            whileInView={{opacity: 1, x:0}}
+            transition={{duration: 1, delay: 0}}
+        >
             <div style={{color: "white", padding: "30px"}}>
                 <p style={{fontWeight: 600, color: "gray"}}>Skills</p>
                 <p style={{fontWeight: 600, fontSize: "23px", marginTop: "20px"}}>Programming Languages and Frameworks</p>
@@ -78,13 +85,19 @@ function Content1() {
                     style={{width: "100%", aspectRatio: "auto", borderRadius: "0px 0px 15px 15px", }}
                 />
             </div>
-        </div>
+        </motion.div>
     )
 }
 
 function Content2(){
     return (
-        <div className='home4content2' style={{}}>
+        <motion.div 
+            className='home4content2' 
+            style={{}}
+            initial={{opacity: 0, x: -200}}
+            whileInView={{opacity: 1, x:0}}
+            transition={{duration: 1, delay: 0.5}}
+        >
             {/* <div className='home4imagecontainer' style={{}}>
                 
             </div> */}
@@ -107,13 +120,19 @@ function Content2(){
                     </Link>
                 </div> */}
             </div>
-        </div>
+        </motion.div>
     )
 }
 
 function Content3(){
     return (
-        <div className='home4content2' style={{}}>
+        <motion.div 
+            className='home4content2' 
+            style={{}}
+            initial={{opacity: 0, x: 200}}
+            whileInView={{opacity: 1, x:0}}
+            transition={{duration: 1, delay: 0.5}}
+        >
             {/* <div className='home4imagecontainer' style={{}}>
                 
             </div> */}
@@ -134,13 +153,19 @@ function Content3(){
                     Explore
                 </div> */}
             </div>
-        </div>
+        </motion.div>
     )
 }
 
 function Content4(){
     return (
-        <div className='home4content2' style={{}}>
+        <motion.div 
+            className='home4content2' 
+            style={{}}
+            initial={{opacity: 0, x: -200}}
+            whileInView={{opacity: 1, x:0}}
+            transition={{duration: 1, delay: 1}}
+        >
             {/* <div className='home4imagecontainer' style={{}}>
                 
             </div> */}
@@ -163,13 +188,18 @@ function Content4(){
                     Explore
                 </div> */}
             </div>
-        </div>
+        </motion.div>
     )
 }
 
 function Content5() {
     return (
-        <div className='home4content1' style={{ }}>
+        <motion.div 
+            className='home4content1' style={{ }}
+            initial={{opacity: 0, x: 200}}
+            whileInView={{opacity: 1, x:0}}
+            transition={{duration: 1, delay: 0}}
+        >
             <div style={{color: "white", padding: "30px"}}>
                 <p style={{fontWeight: 600, color: "gray"}}>Frameworks</p>
                 <p style={{fontWeight: 600, fontSize: "23px", marginTop: "20px"}}>User Interface Design Skills</p>
@@ -192,6 +222,6 @@ function Content5() {
                     style={{width: "100%", aspectRatio: "auto", borderRadius: "0px 0px 15px 15px", }}
                 />
             </div>
-        </div>
+        </motion.div>
     )
 }

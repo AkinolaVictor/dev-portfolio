@@ -1,20 +1,29 @@
 import Link from 'next/link'
 import React from 'react'
+import {motion} from "framer-motion"
 
 function HomeSection3() {
     return (
         <div className='homeSectio3Container' style={{ }}>
             <div className='h_sec3text1container' style={{ }}>
-                <p className='h_sec3text1'>
+                <motion.p 
+                    className='h_sec3text1'
+                    initial={{opacity: 0, x: 200}}
+                    whileInView={{opacity: 1, x:0}}
+                    transition={{duration: 1.2, delay: 0}}
+                >
                     Crafting Innovative Software Solutions For You
-                </p>
-                {/* <p style={{fontWeight: "600", fontSize: "50px", textAlign: "center"}}>Crafting Innovative</p>
-                <p style={{fontWeight: "600", fontSize: "50px", textAlign: "center"}}>Software Solutions For</p>
-                <p style={{fontWeight: "600", fontSize: "50px", textAlign: "center"}}>You</p> */}
-                <p style={{margin: "30px 0px 20px 0px", textAlign: "center", color: "rgba(255,255,255, 0.8)", fontSize: "15px"}}>
+                </motion.p>
+
+                <motion.p 
+                    initial={{opacity: 0, x: 200}}
+                    whileInView={{opacity: 1, x:0}}
+                    transition={{duration: 1.2, delay: 0.5}}
+                    style={{margin: "30px 0px 20px 0px", textAlign: "center", color: "rgba(255,255,255, 0.8)", fontSize: "15px"}}
+                >
                     Welcome to my portfolio, where creativity meets technology. 
                     Explore my projects and discover how i can help bring your ideas to live
-                </p>
+                </motion.p>
             </div>
             
             <div style={{display: "flex", justifyContent: "center", alignItems: "center", margin: "10px 0px"}}>
@@ -31,10 +40,13 @@ function HomeSection3() {
             </div>
 
             <div className='' style={{}}>
-                <img
+                <motion.img
                     className='home3imageCon'
-                    style={{aspectRatio: "auto"}}
+                    style={{aspectRatio: "auto", }}
                     src='/assets/innovate3.jpg'
+                    initial={{opacity: 0, scale: 0}}
+                    whileInView={{opacity: 1, scale: 1}}
+                    transition={{duration: 1.2, delay: 0}}
                 />
             </div>
         </div>

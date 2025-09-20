@@ -1,4 +1,5 @@
 import React from 'react'
+import {motion} from "framer-motion"
 
 function Aboutsection() {
     return (
@@ -29,7 +30,7 @@ function Aboutsection() {
                     <p style={{color: "gray", fontSize: "15px", marginTop: "23px", textAlign: "start"}}>
                         Engagements: Fixed-scope builds, ongoing retainers, and codebae rescue projects.
                     </p>
-
+                    how do i create my own back end service using next.js
                     <p style={{color: "gray", fontSize: "15px", marginTop: "23px", textAlign: "start"}}>
                         Remote-First: Comfortable collaborating across time zones with async workflows.
                     </p>
