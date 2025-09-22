@@ -1,8 +1,15 @@
 import React from 'react'
+import {motion} from "framer-motion"
 
 function Skills() {
     return (
-        <div className='aboutskills' style={{}}>
+        <motion.div 
+            className='aboutskills' 
+            style={{}}
+            initial={{opacity: 0, x: 400}}
+            whileInView={{opacity: 1, x: 0}}
+            transition={{duration: 1.2}}
+        >
             <div className='aboutline' style={{}}/>
             <p style={{margin: "20px 0px"}}>Skills</p>
 
@@ -43,7 +50,7 @@ function Skills() {
                     <p style={{fontSize: "15px", marginBottom: "0px", color: "#414141"}}>Next</p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

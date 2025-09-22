@@ -1,13 +1,31 @@
 import React from 'react'
+import {motion} from "framer-motion"
 
 function HomeSection6() {
+    // if (typeof window === 'undefined') {
+    //     global.window = {}
+    // }
+    // const widthX = window.innerWidth
+    // console.log({widthX});
+    
     return (
         <div className='home6container' style={{}}>
-            <p className='home6text1' style={{}}>
+            <motion.p 
+                className='home6text1' style={{}}
+                initial={{opacity: 0, x: -200}}
+                whileInView={{opacity: 1, x:0}}
+                transition={{duration: 1, delay: 0}}
+            >
                 Core Skills and Technologies That Drive My Development Journey
-            </p>
+            </motion.p>
 
-            <div className='home6contentcontainers' style={{ }}>
+            <motion.div 
+                className='home6contentcontainers' 
+                style={{ }}
+                initial={{opacity: 0, x: -400}}
+                whileInView={{opacity: 1, x:0}}
+                transition={{duration: 1, delay: 0.5}}
+            >
                 <div className='eachhome6content' style={{ }}>
                     <div style={{width: "40px", height: "40px", borderRadius: "20px", marginBottom: "30px"}}>
                         <img 
@@ -53,7 +71,7 @@ function HomeSection6() {
 
                     <p style={{color: "rgba(255,255,255,0.8)", fontSize: "15px"}}>Experienced with MongoDB and Firebase for effective data management</p>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {motion} from "framer-motion"
 
 function ContactSection2() {
     const [data, setData] = useState({
@@ -16,7 +17,13 @@ function ContactSection2() {
     }
     return (
         <div className='contactsection2con' style={{}}>
-            <div className='contactformcon' style={{marginLeft: "auto", marginRight: "auto",}}>
+            <motion.div 
+                className='contactformcon' 
+                style={{marginLeft: "auto", marginRight: "auto",}}
+                initial={{opacity: 0, x: 400}}
+                whileInView={{opacity: 1, x: 0}}
+                transition={{duration: 1.2}}
+            >
                 <p style={{fontWeight: 600, marginBottom: "20px"}}>Connect</p>
                 <p style={{fontWeight: 600, fontSize: "25px", marginBottom: "20px"}}>Get in Touch</p>
                 <p style={{marginBottom: "50px", fontWeight: 600, fontSize: "15px", color: "gray"}}>I'd Love to hear from you</p>
@@ -54,7 +61,7 @@ function ContactSection2() {
                 <button type="submit" className='contactsubmitbtn'>
                     <p>Submit</p>
                 </button>
-            </div>
+            </motion.div>
         </div>
     )
 }

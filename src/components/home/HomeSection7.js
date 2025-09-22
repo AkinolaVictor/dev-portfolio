@@ -1,12 +1,25 @@
 import React from 'react'
+import {motion} from "framer-motion"
 
 function HomeSection7() {
     return (
         <div className='home6container' style={{backgroundColor: "black",}}>
-            <p className='home6text1' style={{ }}>
+            <motion.p 
+                className='home6text1' 
+                style={{ }}
+                initial={{opacity: 0, x: -200}}
+                whileInView={{opacity: 1, x:0}}
+                transition={{duration: 1, delay: 0}}
+            >
                 Transforming ideas into reality through expert freelance development services.
-            </p>
-            <div className='home6contentcontainers' style={{ }}>
+            </motion.p>
+            <motion.div 
+                className='home6contentcontainers' 
+                style={{ }}
+                initial={{opacity: 0, x: -400}}
+                whileInView={{opacity: 1, x:0}}
+                transition={{duration: 1, delay: 0.5}}
+            >
                 <div className='eachhome6content' style={{ }}>
                     <div style={{width: "40px", height: "40px", margin: "0px auto 30px auto"}}>
                         <img 
@@ -59,7 +72,7 @@ function HomeSection7() {
                         I provide flexible solutions that adapt to your evelving needs.
                     </p>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

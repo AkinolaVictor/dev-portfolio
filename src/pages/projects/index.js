@@ -1,20 +1,36 @@
 import Stairs from '@/components/Stairs'
 import React from 'react'
+import {motion} from "framer-motion"
 
 function Index() {
     return (
         <div className='project_container'>
             <Stairs>
-                <p style={{color: "white", fontWeight: "600"}}>
+                <motion.p 
+                    style={{color: "white", fontWeight: "600"}}
+                    initial={{opacity: 0, x: -200}}
+                    whileInView={{opacity: 1, x:0}}
+                    transition={{duration: 1, delay: 0}}
+                >
                     My Projects
-                </p>
+                </motion.p>
 
-                <p style={{opacity: .7, fontWeight: 400, fontSize: "calc(100% - 2px)", marginTop: "10px"}}>
+                <motion.p 
+                    style={{color: "gray", opacity: .7, fontWeight: 400, fontSize: "calc(100% - 2px)", marginTop: "10px"}}
+                    initial={{opacity: 0, x: -200}}
+                    whileInView={{opacity: 1, x:0}}
+                    transition={{duration: 1, delay: 0}}
+                >
                     Projects i have worked upon
-                </p>
+                </motion.p>
 
                 <div className='eachprojcon'>
-                    <div className='each_project_container'>
+                    <motion.div 
+                        className='each_project_container'
+                        initial={{opacity: 0, x: -200}}
+                        whileInView={{opacity: 1, x:0}}
+                        transition={{duration: 1, delay: 0}}
+                    >
                         <div className='eachprojtextcon'>
                             <p style={{fontWeight: 600, fontSize: "calc(100% + 10px)", marginBottom: "20px"}}>
                                 Portfolio
@@ -39,9 +55,14 @@ function Index() {
                                 className='eachprojimgcon'
                             />
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className='each_project_container eachProjectSecond'>
+                    <motion.div 
+                        className='each_project_container eachProjectSecond'
+                        initial={{opacity: 0, x: -200}}
+                        whileInView={{opacity: 1, x:0}}
+                        transition={{duration: 1, delay: 0}}
+                    >
                         
                         <div className='eachprojtextcon'>
                             <p style={{fontWeight: 600, fontSize: "calc(100% + 10px)", marginBottom: "20px"}}>
@@ -66,7 +87,7 @@ function Index() {
                                 className='eachprojimgcon eachprojimgcon2  eachprojimgcon3'
                             />
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </Stairs>
         </div>

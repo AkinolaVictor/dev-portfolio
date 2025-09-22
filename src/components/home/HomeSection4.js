@@ -25,10 +25,35 @@ export default function HomeSection4() {
     return (
         <div className='homesection4Container' style={{}}>
             <div style={{textAlign: "center", color: "white", marginTop: "70px"}}>
-                <p style={{fontWeight: 600, margin: "20px 0px"}}>Innovate</p>
-                <p className='home4txt1' style={{fontWeight: 500, margin: "20px 0px"}}>Core Competencies Overview</p>
-                <p style={{margin: "20px 0px", color: "rgba(255, 255, 255, 0.8", fontSize: "15px"}}>Expertise in modern Software development technologies</p>
+                <motion.p 
+                    style={{fontWeight: 600, margin: "20px 0px",}}
+                    initial={{opacity: 0, x: -200}}
+                    whileInView={{opacity: 1, x:0}}
+                    transition={{duration: 1, delay: 0}}
+                >
+                    Innovate
+                </motion.p>
+
+                <motion.p 
+                    className='home4txt1'
+                    style={{fontWeight: 500, margin: "20px 0px"}}
+                    initial={{opacity: 0, x: -200}}
+                    whileInView={{opacity: 1, x:0}}
+                    transition={{duration: 1, delay: 0.4}}
+                >
+                    Core Competencies Overview
+                </motion.p>
+
+                <motion.p 
+                    style={{margin: "20px 0px", color: "rgba(255, 255, 255, 0.8", fontSize: "15px"}}
+                    initial={{opacity: 0, x: -200}}
+                    whileInView={{opacity: 1, x:0}}
+                    transition={{duration: 1, delay: 0.9}}
+                >
+                    Expertise in modern Software development technologies
+                </motion.p>
             </div>
+
             <div style={{color: "white"}}>
                 <ResponsiveMasonry
                     columnsCountBreakPoints={{350: 1, 1000: 2,}}

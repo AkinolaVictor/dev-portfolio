@@ -1,4 +1,5 @@
 import React from 'react'
+import {motion} from "framer-motion"
 
 function Contactsection1() {
     return (
@@ -6,7 +7,13 @@ function Contactsection1() {
             <div style={{textAlign: "center"}}>
                 {/* <p style={{marginBottom: "20px"}}>I'd love to hear from you!</p> */}
             </div>
-            <div className='contactsection1con' style={{}}>
+            <motion.div 
+                className='contactsection1con' 
+                style={{}}
+                initial={{opacity: 0, x: -400}}
+                whileInView={{opacity: 1, x: 0}}
+                transition={{duration: 1.2}}
+            >
                 <div style={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", margin: "20px"}}>
                     <div style={{width: "40px", marginBottom: "10px", height: "40px"}}>
                         <img 
@@ -42,7 +49,7 @@ function Contactsection1() {
                     <p style={{fontWeight: 600, marginBottom: "10px"}}>LinkedIn</p>
                     <p style={{fontWeight: 300, fontSize: "15px", color: "rgba(255,255,255,0.6)"}}>akinolavictor50@gmail.com</p>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

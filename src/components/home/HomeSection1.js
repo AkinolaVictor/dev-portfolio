@@ -8,7 +8,7 @@ function HomeSection1() {
         <motion.div 
             // ref={container} 
             className='homesection1' 
-            style={{}}
+            // style={{minHeight: "100vh"}}
         >
             <div className='homesection1Texts'>
                 <motion.p 
@@ -39,7 +39,6 @@ function HomeSection1() {
                     whileInView={{opacity: 1, x:0}}
                     transition={{duration: 1.2, delay: 0}}
                 >
-                
                     <Link href={"/contact"} style={{textDecoration: "none"}}>
                         Contact Me
                     </Link>

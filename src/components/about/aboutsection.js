@@ -3,11 +3,16 @@ import {motion} from "framer-motion"
 
 function Aboutsection() {
     return (
-        <div className='aboutskills' style={{margin: "0px"}}>
+        <motion.div 
+            className='aboutskills' 
+            style={{margin: "0px"}}
+            initial={{opacity: 0, x: -400}}
+            whileInView={{opacity: 1, x: 0}}
+            transition={{duration: 1.2}}
+        >
             <div className='aboutline' style={{}}/>
             <p style={{color: "white", padding: "20px 0px"}}>About Me</p>
-            <div className='skillsContainer' style={{}}
-            >
+            <div className='skillsContainer' style={{}}>
                 <div className='eachskill' style={{}}>
                     <p style={{color: "gray", fontSize: "15px", marginTop: "0px", textAlign: "start"}}>
                         I'm Akinola Victor, a freelance fullstack developer specialized in building performant,
@@ -30,13 +35,13 @@ function Aboutsection() {
                     <p style={{color: "gray", fontSize: "15px", marginTop: "23px", textAlign: "start"}}>
                         Engagements: Fixed-scope builds, ongoing retainers, and codebae rescue projects.
                     </p>
-                    how do i create my own back end service using next.js
+                    
                     <p style={{color: "gray", fontSize: "15px", marginTop: "23px", textAlign: "start"}}>
                         Remote-First: Comfortable collaborating across time zones with async workflows.
                     </p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

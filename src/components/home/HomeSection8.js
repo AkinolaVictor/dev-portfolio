@@ -1,13 +1,32 @@
 import React from 'react'
+import {motion} from "framer-motion"
 
 function HomeSection8() {
     return (
         <div className='homesec8container' style={{}}>
-            <p style={{marginTop: "50px", fontWeight: 600, marginBottom: "30px", fontSize: "30px"}}>
+            <motion.p 
+                initial={{opacity: 0, x: -200}}
+                whileInView={{opacity: 1, x:0}}
+                transition={{duration: 1, delay: 0}}
+                style={{marginTop: "50px", fontWeight: 600, marginBottom: "30px", fontSize: "30px"}}
+            >
                 Client Feedback
-            </p>
-            <p>A true professional with exceptional coding skills.</p>
-            <div className='home8contentcontainer' style={{}}>
+            </motion.p>
+
+            <motion.p
+                initial={{opacity: 0, x: -200}}
+                whileInView={{opacity: 1, x:0}}
+                transition={{duration: 1, delay: 0}}
+            >
+                A true professional with exceptional coding skills.
+            </motion.p>
+            <motion.div 
+                className='home8contentcontainer' 
+                style={{}}
+                initial={{opacity: 0, x: -400}}
+                whileInView={{opacity: 1, x:0}}
+                transition={{duration: 1, delay: 0.5}}
+            >
                 <div className='eachhome8item' style={{}}>
                     <div style={{}}>
                         {
@@ -98,7 +117,7 @@ function HomeSection8() {
                     <p style={{fontWeight: "600", marginTop: "20px"}}>John Doe</p>
                     <p style={{marginTop: "10px"}}>Project Manager, TechCorp</p>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

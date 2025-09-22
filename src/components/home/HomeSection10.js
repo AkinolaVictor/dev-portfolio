@@ -1,20 +1,45 @@
 import React from 'react'
+import {motion} from "framer-motion"
 
 function HomeSection10() {
     return (
         <div className='homecontainer10' style={{ }}>
-            <p style={{marginTop: "50px", fontWeight: "600"}}>
+            <motion.p 
+                style={{marginTop: "50px", fontWeight: "600"}}
+                initial={{opacity: 0, x: -200}}
+                whileInView={{opacity: 1, x:0}}
+                transition={{duration: 1, delay: 0}}
+            >
                 Process
-            </p>
-            <p className='home10maintext' style={{}}>
+            </motion.p>
+
+            <motion.p 
+                className='home10maintext' style={{}}
+                initial={{opacity: 0, x: -200}}
+                whileInView={{opacity: 1, x:0}}
+                transition={{duration: 1, delay: 0}}
+            >
                 From Idea to Reality: My Development Journey
-            </p>
-            <p className='home10text1' style={{}}>
+            </motion.p>
+
+            <motion.p 
+                className='home10text1' 
+                style={{}}
+                initial={{opacity: 0, x: -200}}
+                whileInView={{opacity: 1, x:0}}
+                transition={{duration: 1, delay: 0}}
+            >
                 I transform your vision into a functional product through a structured process. 
                 My approach ensures clarity, collaboration and quality at every stage.
-            </p>
+            </motion.p>
 
-            <div className='home10container' style={{}}>
+            <motion.div 
+                className='home10container' 
+                style={{}}
+                initial={{opacity: 0, x: -400}}
+                whileInView={{opacity: 1, x:0}}
+                transition={{duration: 1, delay: 0.5}}
+            >
                 
                 <div className='home10eachcontent' style={{}}>
                     <div className='' style={{}}>
@@ -55,7 +80,7 @@ function HomeSection10() {
                     <p style={{marginTop: "30px", color: "rgba(255,255,255,0.8)", fontSize: "15px"}}>I build your project while rigorously testing for quality</p>
                 </div>
                 
-            </div>
+            </motion.div>
         </div>
     )
 }
