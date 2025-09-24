@@ -16,7 +16,7 @@ function HomeSection1() {
                     style={{}}
                     initial={{opacity: 0, x: -200}}
                     whileInView={{opacity: 1, x: 0}}
-                    transition={{duration: 1.2}}
+                    transition={{duration: 1.7}}
                 >
                     Crafting innovative solutions for tomorrow's challenges
                 </motion.p>
@@ -26,7 +26,7 @@ function HomeSection1() {
                     style={{ color: "gray",  fontSize: "15px"}}
                     initial={{opacity: 0, x: -200}}
                     whileInView={{opacity: 1, x: 0}}
-                    transition={{duration: 1.2, delay: 0}}
+                    transition={{duration: 1.7, delay: 0}}
                 >
                     As a passionate fullstack developer, is pecialize in creating dynamic
                     web applications that elevate user experience. Let's collaborate to
@@ -37,7 +37,7 @@ function HomeSection1() {
                     style={{}}
                     initial={{opacity: 0, x: -100}}
                     whileInView={{opacity: 1, x:0}}
-                    transition={{duration: 1.2, delay: 0}}
+                    transition={{duration: 1.7, delay: 0}}
                 >
                     <Link href={"/contact"} style={{textDecoration: "none"}}>
                         Contact Me
@@ -52,10 +52,10 @@ function HomeSection1() {
                     src='/assets/innovate.jpg'
                     initial={{opacity: 0, scale: 0}}
                     whileInView={{opacity: 1, scale: 1}}
-                    transition={{duration: 1, delay: 0}}
+                    transition={{duration: 1.7, delay: 0}}
                     // initial={{opacity: 0, x: 150}}
                     // whileInView={{opacity: 1, x: 0}}
-                    // transition={{duration: 1.2, delay: 0}}
+                    // transition={{duration: 1.7, delay: 0}}
                 />
             </div>
         </motion.div>
