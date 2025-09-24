@@ -53,9 +53,6 @@ function HomeSection1() {
                     initial={{opacity: 0, scale: 0}}
                     whileInView={{opacity: 1, scale: 1}}
                     transition={{duration: 1.7, delay: 0}}
-                    // initial={{opacity: 0, x: 150}}
-                    // whileInView={{opacity: 1, x: 0}}
-                    // transition={{duration: 1.7, delay: 0}}
                 />
             </div>
         </motion.div>
