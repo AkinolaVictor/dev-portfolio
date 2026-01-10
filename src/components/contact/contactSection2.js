@@ -49,8 +49,8 @@ function ContactSection2() {
         async function user_message() {
             const html_2 = `
                 <div>
-                    <h4>Hello ${name}, Thank you for reaching out to us</h4>
-                    <p>Your message has reached our end, and we'll do our best to respond accordingly.</p>
+                    <h4>Hello ${name}, Thank you for reaching out to me</h4>
+                    <p>Your message has reached my end, and i'll do my best to respond accordingly.</p>
                 </div>
             `
             const sender_payload = {
