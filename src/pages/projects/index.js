@@ -1,6 +1,7 @@
 import Stairs from '@/components/Stairs'
 import React from 'react'
 import {motion} from "framer-motion"
+import Link from 'next/link'
 
 function Index() {
     return (
@@ -41,9 +42,9 @@ function Index() {
                                 some of the stuffs i can do. This is my portfolio website.
                             </p>
 
-                            <div style={{width: "100px", cursor: "pointer", height: "30px", marginTop: "20px", borderRadius: "50px", display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "transparent", border: "1px solid black"}}>
+                            <Link href={"/"} style={{width: "100px", cursor: "pointer", textDecoration: "none", height: "30px", marginTop: "20px", borderRadius: "50px", display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "transparent", border: "1px solid black"}}>
                                 <p style={{fontSize: "calc(100% - 3px)", opacity: .7, fontWeight: 600}}>View Project</p>
-                            </div>
+                            </Link>
                         </div>
 
                         <div className='eachprojimgconx'>
@@ -74,7 +75,7 @@ function Index() {
                                 some of the stuffs i can do. This is a SaaS project.
                             </p>
 
-                            <div style={{width: "100px", cursor: "pointer", height: "30px", marginTop: "20px", borderRadius: "50px", display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "transparent", border: "1px solid black"}}>
+                            <div onClick={()=>{window.open('https://baynt.vercel.app', "_self")}} style={{width: "100px", cursor: "pointer", height: "30px", marginTop: "20px", borderRadius: "50px", display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "transparent", border: "1px solid black"}}>
                                 <p style={{fontSize: "calc(100% - 3px)", opacity: .7, fontWeight: 600}}>View Project</p>
                             </div>
                         </div>
