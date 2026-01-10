@@ -6,8 +6,8 @@ import {google} from "googleapis"
 export default async function sendEmail(req, res) {
     const {userEmail, subject, html} = req.body
 
-    const client_id = process.env.GOOGLE_CLIENT_ID_2
-    const client_secret = process.env.GOOGLE_CLIENT_SECRET_2
+    const client_id = process.env.GOOGLE_CLIENT_ID
+    const client_secret = process.env.GOOGLE_CLIENT_SECRET
     const redirect_uri = "https://developers.google.com/oauthplayground"
     const refresh_token = process.env.GOOGLE_REFRESH_TOKEN
     
@@ -43,11 +43,11 @@ export default async function sendEmail(req, res) {
     };
 
     const emailOptions = {
-        from: 'Baynt <akinolavictor26@gmail.com>',
+        from: 'Portfolio <akinolavictor26@gmail.com>',
         to: userEmail,
         subject,
         html,
-        text: "This message is from baynt",
+        text: "This message is from my portfolio (Portfolio || Victor)",
     }
 
     await emailSender(emailOptions).then((result)=>{

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {motion} from "framer-motion"
 import { isBlank } from '@/exportable'
+import axios from 'axios'
 
 function ContactSection2() {
     const [loading, setLoading] = useState(false)
@@ -54,7 +55,7 @@ function ContactSection2() {
             `
             const sender_payload = {
                 userEmail: `${email}`,
-                subject: 'Baynt',
+                subject: 'Portfolio || Victor',
                 html: html_2
             }
             await emailSender({data: sender_payload})
@@ -63,14 +64,13 @@ function ContactSection2() {
         async function report_message({last}) {
             const html_1 = `
                 <div>
-                    <h4>Message from ${name}</h4>
                     <p>${message}</p>
                     <p>This is the user email: ${email}</p>
                 </div>
             `
             const developer_payload = {
                 userEmail: `akinolavictor50@gmail.com`,
-                subject: 'Baynt Contact Report',
+                subject: `Message from ${name}`,
                 html: html_1
             }
 
@@ -149,7 +149,7 @@ function ContactSection2() {
                 />
 
                 <p className='text-[rosybrown] font-[600] text-[12px] text-center w-full mt-[10px]'>{error}</p>
-                <button type="submit" className='contactsubmitbtn'>
+                <button onClick={sendMsg} type="submit" className='contactsubmitbtn'>
                     {
                         loading?
                         <p>Sending...</p>:

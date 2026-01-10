@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import {motion} from "framer-motion"
+import Head from 'next/head'
 
 function Stairs({children}) {
     const count = 5
@@ -67,11 +68,20 @@ function Stairs({children}) {
         return pallete[i]
     }
 
-    // return (
-    //     <div>
-    //         {children}
-    //     </div>
-    // )
+    return (
+        <div>
+            <Head>
+                <title>Portfolio || Akinola Victor</title>
+                <meta name="description" content="Portfolio of Akinola Victor Olalekan" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            
+            <div>
+                {children}
+            </div>
+        </div>
+    )
 
 
     return (
