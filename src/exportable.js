@@ -20,3 +20,5 @@ export const navItems = [
         href: "/contact"
     },
 ]
+
+export let isBlank = (str) => (!str || /^\s*$/.test(str))

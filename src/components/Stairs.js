@@ -67,6 +67,12 @@ function Stairs({children}) {
         return pallete[i]
     }
 
+    return (
+        <div>
+            {children}
+        </div>
+    )
+
 
     return (
         <div onScroll={()=>{console.log("s");}}>

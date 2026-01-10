@@ -10,6 +10,8 @@ function Contactsection1() {
             <motion.div 
                 className='contactsection1con' 
                 style={{}}
+                // initial={{opacity: 0, x: -400}}
+                // whileInView={{opacity: 1, x: 0}}
                 initial={{opacity: 0, x: -400}}
                 whileInView={{opacity: 1, x: 0}}
                 transition={{duration: 1.2}}
