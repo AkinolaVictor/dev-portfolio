@@ -101,7 +101,8 @@ export default function App({ Component, pageProps, router }) {
       // ref={(e)=>{e.sc}
       style={{overflowY: "auto", overflowX: "hidden", width: "100vw", height: "100vh", backgroundColor}}
     >
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait"> */}
+      <AnimatePresence>
         <TopHeader toggleModal={toggleModal} key={"fs"} route={router.route}/>
         
         {/* {React.Children.map(children, child => React.cloneElement(child, {...props}))} */}
