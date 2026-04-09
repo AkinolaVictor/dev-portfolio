@@ -34,7 +34,7 @@ function Index() {
                     >
                         <div className='eachprojtextcon w-full'>
                             <p style={{fontWeight: 600, fontSize: "calc(100% + 10px)", marginBottom: "20px"}}>
-                                Health Enlight
+                                Health Enlight Initiative
                             </p>
                             
                             <p style={{opacity: .7, fontSize: "15px"}}>
