@@ -20,15 +20,20 @@ function HomeSection8() {
             >
                 A true professional with exceptional coding skills.
             </motion.p>
-            <motion.div 
+            <div 
                 className='home8contentcontainer' 
                 style={{}}
-                initial={{opacity: 0, x: -400}}
+                initial={{opacity: 0, x: -200}}
                 whileInView={{opacity: 1, x:0}}
                 transition={{duration: 1, delay: 0.5}}
             >
-                <div className='eachhome8item' style={{}}>
-                    <div style={{}}>
+                <motion.div 
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    transition={{duration: 1, delay: 0.5}}
+                    className='eachhome8item' style={{}}
+                >
+                    <div style={{}} className='flex'>
                         {
                             [1,1,1,1,1].map((item, index)=>{
                                 return(
@@ -56,9 +61,15 @@ function HomeSection8() {
                     </div>
                     <p style={{fontWeight: "600", marginTop: "20px"}}>John Doe</p>
                     <p style={{marginTop: "10px"}}>Project Manager, TechCorp</p>
-                </div>
-                <div className='eachhome8item' style={{}}>
-                    <div style={{}}>
+                </motion.div>
+                
+                <motion.div 
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    transition={{duration: 1, delay: 0.5}}
+                    className='eachhome8item' style={{}}
+                >
+                    <div style={{}} className='flex'>
                         {
                             [1,1,1].map((item, index)=>{
                                 return(
@@ -86,9 +97,15 @@ function HomeSection8() {
                     </div>
                     <p style={{fontWeight: "600", marginTop: "20px"}}>John Doe</p>
                     <p style={{marginTop: "10px"}}>Project Manager, TechCorp</p>
-                </div>
-                <div className='eachhome8item' style={{borderBottom: "none"}}>
-                    <div style={{}}>
+                </motion.div>
+
+                <motion.div 
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    transition={{duration: 1, delay: 0.5}}
+                    className='eachhome8item' style={{borderBottom: "none"}}
+                >
+                    <div style={{}} className='flex'>
                         {
                             [1,1,1,1].map((item, index)=>{
                                 return(
@@ -116,8 +133,8 @@ function HomeSection8() {
                     </div>
                     <p style={{fontWeight: "600", marginTop: "20px"}}>John Doe</p>
                     <p style={{marginTop: "10px"}}>Project Manager, TechCorp</p>
-                </div>
-            </motion.div>
+                </motion.div>
+            </div>
         </div>
     )
 }

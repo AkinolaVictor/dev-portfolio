@@ -16,7 +16,7 @@ function HomeSection7() {
             <motion.div 
                 className='home6contentcontainers' 
                 style={{ }}
-                initial={{opacity: 0, x: -400}}
+                initial={{opacity: 0, x: -200}}
                 whileInView={{opacity: 1, x:0}}
                 transition={{duration: 1, delay: 0.5}}
             >

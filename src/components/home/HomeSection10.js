@@ -33,7 +33,7 @@ function HomeSection10() {
                 My approach ensures clarity, collaboration and quality at every stage.
             </motion.p>
 
-            <motion.div 
+            <div 
                 className='home10container' 
                 style={{}}
                 initial={{opacity: 0, x: -400}}
@@ -41,7 +41,12 @@ function HomeSection10() {
                 transition={{duration: 1, delay: 0.5}}
             >
                 
-                <div className='home10eachcontent' style={{}}>
+                <motion.div 
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    transition={{duration: 1, delay: 0.5}}
+                    className='home10eachcontent' style={{}}
+                >
                     <div className='' style={{}}>
                         <img
                             className='home10imageCon'
@@ -52,9 +57,14 @@ function HomeSection10() {
 
                     <p style={{fontWeight: "600", fontSize: "25px", marginTop: "30px", }}>Step 1: Understanding Your Requirements</p>
                     <p style={{marginTop: "30px", color: "rgba(255,255,255,0.8)", fontSize: "15px"}}>I start by clarifying your ideas and objectives</p>
-                </div>
+                </motion.div>
                 
-                <div className='home10eachcontent' style={{}}>
+                <motion.div 
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    transition={{duration: 1, delay: 0.5}}
+                    className='home10eachcontent' style={{}}
+                >
                     <div className='' style={{}}>
                         <img
                             className='home10imageCon'
@@ -65,9 +75,14 @@ function HomeSection10() {
 
                     <p style={{fontWeight: "600", fontSize: "25px", marginTop: "30px", }}>Step 2: Design and Prototyping</p>
                     <p style={{marginTop: "30px", color: "rgba(255,255,255,0.8)", fontSize: "15px"}}>I create wireframes and prototypes for your review</p>
-                </div>
+                </motion.div>
                 
-                <div className='home10eachcontent' style={{borderBottom: "none"}}>
+                <motion.div 
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    transition={{duration: 1, delay: 0.5}}
+                    className='home10eachcontent' style={{borderBottom: "none"}}
+                >
                     <div className='' style={{}}>
                         <img
                             className='home10imageCon'
@@ -78,9 +93,9 @@ function HomeSection10() {
 
                     <p style={{fontWeight: "600", fontSize: "25px", marginTop: "30px", }}>Step 3: Development and Testing</p>
                     <p style={{marginTop: "30px", color: "rgba(255,255,255,0.8)", fontSize: "15px"}}>I build your project while rigorously testing for quality</p>
-                </div>
+                </motion.div>
                 
-            </motion.div>
+            </div>
         </div>
     )
 }

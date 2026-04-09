@@ -5,7 +5,7 @@ import {google} from "googleapis"
 
 export default async function sendEmail(req, res) {
     const {userEmail, subject, html} = req.body
-
+    // NEXT_PUBLIC_USEMAIL, NEXT_PUBLIC_USEPASS
     const client_id = process.env.GOOGLE_CLIENT_ID
     const client_secret = process.env.GOOGLE_CLIENT_SECRET
     const redirect_uri = "https://developers.google.com/oauthplayground"

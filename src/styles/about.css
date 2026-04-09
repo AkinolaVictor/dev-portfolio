@@ -21,7 +21,9 @@
 
 .eachskill{
     width: calc(50% - 40px);
-    height: 300px;
+    /* height: 300px; */
+    height: auto;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;

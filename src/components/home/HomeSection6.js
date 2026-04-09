@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {motion} from "framer-motion"
 
 function HomeSection6() {
+    const [mobile, setMobile] = useState(false)
     // if (typeof window === 'undefined') {
     //     global.window = {}
     // }
     // const widthX = window.innerWidth
     // console.log({widthX});
+    // useEffect(()=>{
+    //     const isMobile = window.innerWidth < 768;
+    //     setMobile(isMobile)
+    // }, [])
     
     return (
         <div className='home6container' style={{}}>
@@ -19,14 +24,19 @@ function HomeSection6() {
                 Core Skills and Technologies That Drive My Development Journey
             </motion.p>
 
-            <motion.div 
+            <div 
                 className='home6contentcontainers' 
                 style={{ }}
-                initial={{opacity: 0, x: -400}}
-                whileInView={{opacity: 1, x:0}}
+                initial={{opacity: 0, x: mobile?0:-400, y: mobile?200:0}}
+                whileInView={{opacity: 1, y:0, x:0}}
                 transition={{duration: 1, delay: 0.5}}
             >
-                <div className='eachhome6content' style={{ }}>
+                <motion.div 
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    transition={{duration: 1, delay: 0.5}}
+                    className='eachhome6content' style={{ }}
+                >
                     <div style={{width: "40px", height: "40px", borderRadius: "20px", marginBottom: "30px"}}>
                         <img 
                             src="/icons/expert_code_white.svg" 
@@ -40,8 +50,14 @@ function HomeSection6() {
                     </p>
 
                     <p style={{color: "rgba(255,255,255,0.8)", fontSize: "15px"}}>Proficient in HTML, CSS, and, Javascript for dynamic web applications.</p>
-                </div>
-                <div className='eachhome6content' style={{ }}>
+                </motion.div>
+
+                <motion.div 
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    transition={{duration: 1, delay: 0.5}}
+                    className='eachhome6content' style={{ }}
+                >
                     <div style={{width: "40px", height: "40px", borderRadius: "20px", marginBottom: "30px"}}>
                         <img 
                             src="/icons/framework_white.svg" 
@@ -55,8 +71,14 @@ function HomeSection6() {
                     </p>
 
                     <p style={{color: "rgba(255,255,255,0.8)", fontSize: "15px"}}>Skilled in React and Next for building responsive user interface.</p>
-                </div>
-                <div className='eachhome6content' style={{ borderBottom: "none" }}>
+                </motion.div>
+                
+                <motion.div 
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    transition={{duration: 1, delay: 0.5}}
+                    className='eachhome6content' style={{ borderBottom: "none" }}
+                >
                     <div style={{width: "40px", height: "40px", borderRadius: "20px", marginBottom: "30px"}}>
                         <img 
                             src="/icons/database_white.svg" 
@@ -70,8 +92,8 @@ function HomeSection6() {
                     </p>
 
                     <p style={{color: "rgba(255,255,255,0.8)", fontSize: "15px"}}>Experienced with MongoDB and Firebase for effective data management</p>
-                </div>
-            </motion.div>
+                </motion.div>
+            </div>
         </div>
     )
 }

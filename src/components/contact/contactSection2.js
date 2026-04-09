@@ -78,7 +78,7 @@ function ContactSection2() {
         }
 
         async function emailSender({data, last}) {
-            return await axios.post("/api/sendEmail", {...data}).then((result)=>{
+            return await axios.post("/api/sendEmail_2", {...data}).then((result)=>{
                 const {successful} = result.data
                 if(successful){
                     console.log("successful");
@@ -108,11 +108,11 @@ function ContactSection2() {
             <motion.div 
                 className='contactformcon' 
                 style={{marginLeft: "auto", marginRight: "auto",}}
-                initial={{opacity: 0, x: 400}}
-                whileInView={{opacity: 1, x: 0}}
+                initial={{opacity: 0.2}}
+                whileInView={{opacity: 1,}}
                 // initial={{opacity: 0}}
                 // whileInView={{opacity: 1}}
-                transition={{duration: 1.2}}
+                transition={{duration: 1, delay: 0.4}}
             >
                 <p style={{fontWeight: 600, marginBottom: "20px"}}>Connect</p>
                 <p style={{fontWeight: 600, fontSize: "25px", marginBottom: "20px"}}>Get in Touch</p>
@@ -129,7 +129,7 @@ function ContactSection2() {
                 />
                 <p style={{fontWeight: 400, fontSize: "15px", color: "rgba(255, 255, 255, 0.8)"}}>Email</p>
                 <input 
-                    type="text" 
+                    type="email" 
                     name="clientemail" 
                     value={data.email}
                     style={{}}
