@@ -38,3 +38,8 @@ https://app.banani.co
 Portfolio link
 https://dev-portfolio-hvzj.onrender.com/
 
+
+
+I built a portfolio website to showcase ability and skills of the owner.
+
+Write a sample description of the solution and the impact i made on the website

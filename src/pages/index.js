@@ -14,6 +14,8 @@ import HomeSection7 from "@/components/home/HomeSection7";
 import HomeSection8 from "@/components/home/HomeSection8";
 import HomeSection9 from "@/components/home/HomeSection9";
 import HomeSection10 from "@/components/home/HomeSection10";
+import TextFadeOverlay from "@/components/ui/TextFadeOverlay";
+import IntegratedScroll from "../components/ui/IntegratedScroll";
 
 export default function Home({test, bg}) {
   // console.log({test});
@@ -47,6 +49,23 @@ export default function Home({test, bg}) {
           
           <div className='home-main' style={{backgroundColor: bg}}>
             <HomeSection1 />
+            {/* <div className="" style={{width: "100vw", height: "100vh", display: "flex", justifyContent: "center", alignItems: "center"}}>
+              <div style={{padding: "100px"}}>
+                <TextFadeOverlay
+                  playOnScroll
+                  progression={"char_line"}
+                  text={`
+                    i like to say this component is really helpful
+                    i like to say this component is really helpful
+                    i like to say this component is really helpful
+                    As a passionate fullstack developer, is pecialize in creating dynamic web applications that elevate user experience. Let's collaborate to bring your idea to life with cutting-edge technology.
+                    As a passionate fullstack developer, is pecialize in creating dynamic web applications that elevate user experience. Let's collaborate to bring your idea to life with cutting-edge technology.
+                    As a passionate fullstack developer, is pecialize in creating dynamic web applications that elevate user experience. Let's collaborate to bring your idea to life with cutting-edge technology.
+                  `}
+                />
+              </div>
+            </div> */}
+            {/* <IntegratedScroll /> */}
             <HomeSection2 />
             <HomeSection3 />
             <HomeSection4 />

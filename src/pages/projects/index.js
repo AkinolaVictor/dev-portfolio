@@ -26,6 +26,39 @@ function Index() {
                 </motion.p>
 
                 <div className='eachprojcon'>
+
+                    <motion.div 
+                        className='each_project_container eachProjectSecond'
+                        initial={{opacity: 0, x: -200}}
+                        whileInView={{opacity: 1, x:0}}
+                        transition={{duration: 1, delay: 0}}
+                    >
+                        
+                        <div className='eachprojtextcon'>
+                            <p style={{fontWeight: 600, fontSize: "calc(100% + 10px)", marginBottom: "20px"}}>
+                                Webflux
+                            </p>
+                            
+                            <p style={{opacity: .7, fontSize: "15px"}}>
+                                An open source animation component library focused on highly customizable, event-driven UI interactions.
+                            </p>
+
+                            <div onClick={()=>{window.open('https://webflux-rouge.vercel.app/', "_self")}} style={{width: "100px", cursor: "pointer", height: "30px", marginTop: "20px", borderRadius: "50px", display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "transparent", border: "1px solid black"}}>
+                                <p style={{fontSize: "calc(100% - 3px)", opacity: .7, fontWeight: 600}}>View Project</p>
+                            </div>
+                        </div>
+
+                        <div className='eachprojimgcon eachprojimgcon2'>
+                            <img 
+                                src="/assets/webflux.jpg" 
+                                alt="code icon" 
+                                style={{aspectRatio: "auto",margin: 0, padding: 0, }}
+                                className='eachprojimgcon eachprojimgcon2  eachprojimgcon3'
+                            />
+                        </div>
+                    </motion.div>
+
+                    
                     <motion.div 
                         className='each_project_container'
                         initial={{opacity: 0, x: -200}}
